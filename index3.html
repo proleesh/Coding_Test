@@ -85,7 +85,8 @@
             <li>문의</li>
             <li>뉴스</li>
         </ul>
-        <p>링크나 메뉴들이 해당하는 nav영역입니다.</p>
+        <input type="text" maxlength="10" size="10" value="10자리 이내">
+        <p>링크나 메뉴들이 해당하는 nav영역입니다.</p>        <input type="search" placeholder="검색어"> <input type="button" value="검색">
     </nav>
 
 
@@ -95,7 +96,8 @@
             <p>상세 정보를 담는 시맨틱 블록 태그</p>
         </details>
         <p>본문에 해당하는 section영역입니다.</p>
-        <figure>
+
+        <!-- <figure>
             <figcaption>alert() 함수 활용</figcaption>
             <pre>
                 <code>function f() {alert("경고합니다");}</code>
@@ -112,17 +114,63 @@
         File Uploding<progress value="7" max="10"></progress><br>
 
             </p>
-        </figure>
+        </figure> -->
         <form name="" enctype="데이터의 인커딩 타입" target="윈도우 이름" action="웹 서버 응용 프로그램의 URL" method="get">
-            사용자ID : <input type="text" size="15" value=""><br>
-            비밀번호 : <input type="password" size="15" value="">
-            <input type="submit" value="로그인">
+            <fieldset>
+            <legend>회원정보</legend>
+            아이디   : <input type="email" size="10" value="" placeholder="abc@mail"> <input type="submit" value="전송">
+            비밀번호 : <input type="password" size="15" value=""><br>
+            전화번호 : <input type="tel" placeholder="010-1111-1111"><br>
+
+            <input type="submit" value="로그인"><br>
+          국가 선택 :  <input type="text" list="countries">
+             <datalist id="countries">
+                <option value="한국"></option>
+                <option value="중국"></option>
+                <option value="미국"></option>
+                <option value="일본"></option>
+                <option value="영국"></option>
+            </datalist><br>
+            혈액형 : <select name="blood" id="">
+                <option value="A">A형</option>
+                <option value="B">B형</option>
+                <option value="AB" selected>AB형</option>
+                <option value="O">O형</option>
+                <option value="RH+">RH+형</option>
+            </select><br>
+            <label for="invite_code">
+                초대코드 : 
+            </label><br>            <input type="text" size=6 maxlength=6 placeholder="a00123" id="invite_code">
+            <form action="">
+                <input type="color" value="ff5733" onchange="document.body.style.color=this.value">
+            </form>
+            
+
+            증상 체크 : <input type="checkbox" name="symptom" value="발열" multiple>발열 <input type="checkbox" name="symptom" value="호흡 곤란" multiple>호흡 곤란 <input type="checkbox" name="symptom" value="두통" multiple>두통 <br>
+            성별 : <input type="radio" name="sex" id="" checked value="male"> 남성 <input type="radio" name="sex" value="female"> 여성 <br>
+            키 : <input type="number" min="140.0" max="200.0" step="0.1" value="170.0"><br>
+            비만 : 45<input type="range" min="45.0" max="100.0" list="weight">100
+            <datalist id="weight">
+                <option value="50">Low</option>
+                <option value="75">Medium</option>
+                <option value="90">High</option>
+            </datalist><br>
+            출생년월 : <input type="month" value="1950-01">
+            <br>
+            
+            주민등록번호 : <input type="text" maxlength="6" size="6"> - <input type="password" maxlength="7" size="7"><br>
+            초기화 : <input type="reset"><br>
+            파일올리기 : <input type="file">
+            글 : <textarea name="" id="" cols="50" rows="4" placeholder="아무나 쓰세용!^^"></textarea><br>
+            </fieldset>
         </form>
+        날짜 : <form><input type="week" value="2022-W01"></form>
+        
     </section>
     <article class="article">This is article area! <h2>학교활동</h2>
         <figure>책이나 보고성 등 본문에 삽입하는 사진, 차트, 삽화, 소스코드 등을 통상적으로 '그림'으로 표현
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1"
-                alt="Dubai Hotel" width="120" height="60">
+            <!--<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1"
+                alt="Dubai Hotel" width="120" height="60">-->
         </figure>
         <p>본문 내에 각 절이나 영역을 해당하는 article영역입니다.</p>
     </article>
