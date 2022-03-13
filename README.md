@@ -1,3 +1,5 @@
-# test
-Development Environment : Windows 11 pro, html 5, Visual Code
-Computer Basic Coding(Front-End편 for HTML PDF 노트정리) Notion : https://www.notion.so/merci726/Computer-Basic-Coding-Front-End-for-HTML-PDF-648601bd351f4f07885be0dd110b4324
+USE/사용/使用 : 
+![](https://img.shields.io/badge/MicrosoftWindows-11pro-blue)
+![](https://img.shields.io/badge/HTML-5-orange)
+![](https://img.shields.io/badge/OracleJava-1.8-blue)
+![](https://img.shields.io/badge/VisualStudioCode-1.65.1-blue)
