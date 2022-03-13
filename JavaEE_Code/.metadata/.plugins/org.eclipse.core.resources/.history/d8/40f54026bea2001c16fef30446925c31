@@ -1,0 +1,27 @@
+package com.shlee.hello;
+
+import java.util.Scanner;
+
+public class Project_002 {
+	public static void main(String[] args) {
+		
+		int salary = 4200000; //기본 월급
+		
+		// 직급별 월급 계산
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("당신의 직급을 입력하세요 : ");
+		String position = sc.nextLine();
+		
+		switch (salary) {
+		case position == "Director":
+			System.out.println("당신은 부장입니다.");
+			System.out.println("당신의 월급은 다음과 같습니다. ");
+			break;
+		case position == "Intern":
+				System.out.println("당신은 인턴입니다.");
+		
+		}
+	}
+
+}

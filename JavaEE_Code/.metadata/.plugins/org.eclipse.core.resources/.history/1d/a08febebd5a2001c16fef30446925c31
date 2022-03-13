@@ -1,0 +1,11 @@
+package com.shlee.hello;
+
+public class project_005 {
+	public static void main(String[] args) {
+		int [] arr = {24, 55, 23, 53, 44,};
+		
+		System.out.println("배열: " + arr); //메모리 access가 호출된다.
+		
+	}
+
+}

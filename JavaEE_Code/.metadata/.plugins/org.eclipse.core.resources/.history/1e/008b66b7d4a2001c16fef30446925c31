@@ -1,0 +1,24 @@
+package com.shlee.hello;
+
+import java.util.Scanner;
+
+public class Project_004 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("입력하고 싶은 숫자를 입력 : ");
+		Integer a  = sc.nextInt();
+		while(a<5) {
+			a++;
+			if(a == 3) {
+				continue;//여기서 다시 올라가서 계산
+			}
+			System.out.println("a의 값은 : " + a);
+			
+		}
+		int k = 5;
+		do {
+			System.out.println("한번은 돌아가요" + k);
+		}while(k-->0);
+	}
+
+}

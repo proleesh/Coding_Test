@@ -1,0 +1,16 @@
+package com.shlee.hello;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		/* System.out.println("GOOD"); */
+		/*이하는 비트연산자 */
+		System.out.println(2<<2);//8 2진: 0010 -> 2진: 1000 = 8 
+		System.out.println(3>>1);//3 2진: 0011 -> 2진: 0001 = 1
+		System.out.println(8>>1);//-8 2진: 1000 -> 2진 : 0100 = 4
+		/*이하는 논리 연산자*/
+		boolean xxx = false, yyy = false;
+		
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+package com.shlee.hello;
+
+import java.util.Scanner;
+
+public class Project_002 {
+	public static void main(String[] args) {
+
+		int salary = 4299999; // 기본 월급
+
+		// 직급별 월급 계산
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("당신의 직급의 숫자를 입력하세요 : ");
+		int position = sc.nextInt();
+		
+		switch (salary = position) {
+		case  1:
+			System.out.println("당신은 부장입니다.");
+			System.out.println("당신의 월급은 다음과 같습니다. ");
+			float director = (float) (salary + (0.5 * salary));
+			System.out.println(director);
+			break;
+		case 2: 
+			System.out.println("당신은 인턴입니다.");
+			System.out.println("당신의 월급은 다음과 같습니다. ");
+			float intern = (float) (salary + (0.1 * salary));
+			System.out.println(intern);
+			break;
+		case 3:
+			System.out.println("당신은 과장입니다. ");
+			System.out.println("당신의 월급은 다음과 같습니다. ");
+			float manager = (float) (salary + (0.3 * salary));
+			System.out.println(manager);
+			break;
+		case 4:
+			System.out.println("당신은 대리입니다. ");
+			System.out.println("당신의 월급은 다음과 같습니다. ");
+			float deputy = (float) (salary + (0.2 * salary));
+			System.out.println(deputy);
+			break;
+		default:
+			System.out.println("오류입니다. ");
+		}
+	}
+
+}

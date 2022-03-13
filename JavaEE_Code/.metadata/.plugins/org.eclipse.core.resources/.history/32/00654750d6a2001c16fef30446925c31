@@ -1,0 +1,17 @@
+package com.shlee.hello;
+
+public class project_005 {
+	public static void main(String[] args) {
+		int [] arr = {24, 55, 23, 53, 44};
+		
+		System.out.println("배열: " + arr); //메모리 access가 호출된다.
+		
+		System.out.println("배열중 첫 번째 자리: " + arr[0]); //24
+		System.out.println("배열중 두 번째 자리: " + arr[1]); //55
+		System.out.println("배열중 세 번째 자리: " + arr[2]); //23
+		System.out.println("배열중 네 번째 자리: " + arr[3]); //53
+		System.out.println("배열중 다섯 번째 자리: " + arr[4]); //44
+		System.out.println("배열중 여섯 번째 자리: " + arr[5]);
+	}
+
+}

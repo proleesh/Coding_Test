@@ -1,0 +1,20 @@
+package com.shlee.hello;
+
+import java.util.Scanner;
+
+public class Project_001 {
+	public static void main(String[] args) {
+		System.out.println("Num의 값을 입력 하십시오 : ");
+		Scanner sc = new Scanner(System.in);
+		Integer num = sc.nextInt();
+		if(num >= 400){
+			System.out.println("Biggest");
+		}else if(num <= 300){
+			System.out.println("Umm.....");
+			System.out.println("Good Job");
+		}else {
+			System.out.println("Error");
+		}
+	}
+
+}

@@ -38,7 +38,7 @@ public class Project_003 {
 		
 		for (int k = 1; k <= 10; k++) {
 			//공백 for문
-			for (int q = 1; q <= k; q++) {
+			for (int q = 10 - 9; q <= k; q++) {
 				System.out.print(" ");
 			}
 			//별 for문
