@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style004.css">-->
+    <style>@import "style004.css";
+    p{background:salmon; text-indent: 5em; text-align: justify;}
+    .h1s::first-letter{color: red;} /*첫번째만 색변경 가상Selector*/
+    p span{font-size: 30px;} /*자손 Selector*/
+    p>strong{background:aquamarine;} /*자식 Selector*/
+    #ulli_1:hover{background-color: aquamarine; border-radius:50px;} /*마우스가 올릴때만 배경색생성 가상Selector*/
+    #ulli_2:hover{background-color: blueviolet; border-radius:50px;}
+    #ulli_3:hover{background-color: burlywood; border-radius:50px;}
+    #ulli_4:hover{background-color: darkolivegreen; border-radius:50px;}
+    #ulli_5:hover{background-color: tomato; border-radius: 50px;}
+
+    </style>
+</head>
+<body class="main">
+    <h1 class="h1s" style="cursor: n-resize;">오늘뉴스</h1>
+    <br>
+    <a href="https://www.google.com" style="text-decoration: none;">구글검색</a>
+    <hr>
+    <ul class="unordered">
+        <li id="ulli_1">안녕하세요</li>
+        <li id="ulli_2">안녕하세요</li>
+        <li id="ulli_3">안녕하세요</li>
+        <li id="ulli_4">안녕하세요</li>
+        <li id="ulli_5">안녕하세요</li>
+    </ul>
+    <ol>
+        <li id="li_1">Hello World</li>
+        <li id="li_2">Hello World</li>
+        <li id="li_3">Hello World</li>
+        <li id="li_4">Hello World</li>
+        <li id="li_5">Hello World</li>
+        <li id="li_6">Hello World</li>
+        <li id="li_7">Hello World</li>
+        <li id="li_8">Hello World</li>
+        <li id="li_9">Hello World</li>
+        <li id="li_10">Hello World</li>
+    </ol>
+    <p>문재인 대통령이 23일 새<strong><span>KOREA BANK</span></strong> 한국은행 총재 후보로 이창용 국제통화기금(IMF) 아시아·태평양 담당 국장을 지명했다. 청와대는 “윤석열 대통령 당선인 측의 의견을 들었다”고 밝혔지만 윤 당선인 측은 “협의하거나 추천한 바 없다”고 정면 반박했다. 정권이양을 48일 앞두고 인사권 행사 수위를 조율하던 신구 권력이 재차 격하게 충돌하면서 문 대통령과 윤 당선인의 회동도 당분간 성사되기 어려울 것이라는 전망이 나온다.
+    <em style="font-size: 40px;">자식태그입니다.</em></p>
+</body>
+</html>

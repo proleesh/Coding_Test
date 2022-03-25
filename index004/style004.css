@@ -1,0 +1,52 @@
+body{
+    background-color: moccasin;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 20px;
+
+}
+h1{
+    text-align: right;
+    color: lightseagreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    text-shadow: 3px 3px 5px blue;
+}
+
+span{
+    color: darkorchid;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#li_1{
+    background-color: darkcyan;
+    font-size: 40px;
+}
+#li_2{
+    background-color: darkgreen;
+}
+#li_3{
+    background-color: darkmagenta;
+}
+#li_4{
+    background-color: seagreen;
+}
+#li_5{
+    background-color: darkgoldenrod;
+}
+#li_6{
+    background-color: darkslateblue;
+}
+#li_7{
+    background-color: darkkhaki;
+}
+#li_8{
+    background-color: darkslategray;
+}
+#li_9{
+    background-color: dodgerblue;
+}
+#li_10{
+    background-color: darkolivegreen;
+}
