@@ -1,0 +1,19 @@
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.div01{
+    font-size: 10px;
+}
+.div02{
+    color:blueviolet;
+}
+.div03{
+    background-color: chartreuse;
+}
+.div04{
+    color: aquamarine;
+}
+.div05{
+    font-style: inherit;
+}

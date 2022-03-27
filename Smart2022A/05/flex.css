@@ -1,0 +1,49 @@
+.container{
+    background-color: orange;
+    /* display: inline-flex는 Property를 주면 Container 영역이 item에 맞게 줄어든다 */
+    display: flex;
+    /* flex-direction은 배치 방향을 설정하는 Property다 */
+    /* flex-direction: column은 수직방향을 하는 Value이다.  */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction의 Property Value에 row-reverse를 쓰면 바전하는 것이다. */
+    /* flex-wrap: wrap-reverse; */
+    /* wrap는 Browser의 너비를 초과한 아이템들을 줄 바꿈을 하여 다음 줄로 넘긴다. */
+    /* wrap-reverse는 반전 */
+    /* flex-wrap Property는 보통 반응형 웹페이지를 개발하기위해 쓴다 */
+    flex-flow: row wrap;
+    /* flex-wrap와 flex-direction의 조합이 flex-flow */
+    /* justify-content: space-evenly; 균등하게 나열 */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    height: 100px;
+    align-items: baseline;
+    align-content: stretch;
+
+
+}
+/* order Property는 숫자가 작은것이 먼저 배치된다. */
+.container :nth-child(1){
+    order: 100;
+    flex-grow: 1;
+}
+.container :nth-child(2){
+    order: -2;
+    flex-grow: 20;
+}
+.container :nth-child(3){
+    order: 4;
+    flex-grow: 10;
+}
+.container :nth-child(4){
+    order: 0;
+    flex-basis: 100px;
+}
+.container :nth-child(5){
+    order: -5;
+    flex-shrink: 5;
+}
+.item {
+    background-color: khaki;
+    border: 1px solid grey;
+}

@@ -1,0 +1,36 @@
+h1 {
+    color: lightgreen;
+    font-size: 50px;
+}
+h2{
+    color:darkolivegreen;
+    font-size: 40px;
+}
+
+.smart01{
+    background: saddlebrown;
+    height: 50px;
+    border: 1px solid black;
+}
+.smart02{
+    background: gold;
+    height: 50px;
+    border: 1px solid black;
+}
+.smart03{
+    background: chartreuse;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.ict01{
+    background: saddlebrown;
+}
+.ict02{
+    background: gold;
+
+}
+.ict03{
+    background: chartreuse;
+}
+
