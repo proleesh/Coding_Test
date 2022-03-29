@@ -68,3 +68,123 @@ if(BMI >= 32){
 }else{
     alert("잘못입력하거나 오류입니다.")
 }
+var m = new Map([['Katty', 67], ['Jacy', 88], ['Nancy', 98]]);
+alert(m.get('Nancy')); //98
+m.set('Adam', 66) //add Adam & score 66
+m.set('Sebastian', 100) //add Sebastian & score 100
+alert(m.has('Adam')) //view Object True or Flase
+m.delete('Nancy')
+alert(m.get('Nancy')) //undifended
+m.set('Sebastian', 83)
+alert(m.get('Sebastian')) //83 (killer history value)
+
+var s = new Set(); //empty Set
+var s1 = new Set([1, 2, 3, 2, 4, 3, 3, '3']) //input 1, 2, 3
+alert(s1) //object Set
+s1.add(4);
+alert(s1)
+// alert('당신의 브라우저는 Map와 Set를 Support합니다.')
+
+// var a = [1, 2, 3];
+// for(var x of a){
+// }
+// alert('당신의 브라우저는 for ... of를 support합니다. ')
+var a = ['A', 'B', 'C'];
+var Aset = new Set(['A', 'B', 'C'])
+var Amap = new Map([['A', 1], ['B', 2], ['C', 3]])
+// for(var x of a){
+//     alert(x); // A B C 순서대로 나온다
+// }
+// for(var x of Aset){
+//     alert(x); // A B C 순서대로 나온다
+// }
+for(var x of Amap){
+    alert(x); // A, 1 B, 2 C, 3 순서대로 나온다
+    alert(x[0] + '=' + x[1]) // A = 1, B = 2, C = 3
+}
+//iterable 반복 가능한
+//Array Example:
+a.forEach(function(element, index, array){
+    //element: 현재 element를 지향
+    //index: 현재 index를 지향
+    //array: 현재 Array 객체 자신을 지향
+    alert(element + ', index=' + index) //A, index=0 B, index=1 C, index=2
+})
+//forEach() method는 ES 5.1버전에서 도입해서 브라우저에서 실행 불가능할 수 있음
+//===================================================
+//Set Example:
+Aset.forEach(function(element, sameElement, set){
+    alert(element) //A B C
+})
+//===================================================
+//Map Example:
+Amap.forEach(function(value, key, map){
+    alert(value) // 1 2 3
+})
+//간편하게 사용하고 싶으면 그냥 element로 property를 추출하면 된다
+a.forEach(function(element){
+    alert(element) //A B C
+})
+
+var r1 = 12.34
+var r2 = 9.08
+var r3 = 73.1
+var st1 = 3.14 * r1 * r1
+var st2 = 3.14 * r2 * r2
+var st3 = 3.14 * r3 * r3
+
+function abs(x){
+    if(x >= 0){
+        return x;
+    }else{
+        return -x;
+    }
+}
+//function는 이 함수의 definition
+//abs는 이 함수의 이름
+//x는 이 함수의 attribute value 많은 value는 ,로 분리
+//{ ... }사이에 코드는 함수체, 많은 문단을 포함 가능하고 심지어 없어도 됨
+var abs_1 = function (x){
+    if(x >= 0){
+        return x;
+    }else{
+        return -x;
+    }
+}
+alert(abs_1(10)); //10
+alert(abs_1(100));//100
+alert(abs_1(-1)); //1
+alert(abs()); //NaN
+
+function abs_2(x){
+    if(typeof x !== 'number'){
+        throw 'Not a number';
+    }
+    if(x >= 0){
+        return x;
+    }else{
+        return -x;
+    }
+}
+alert(abs_2(1));
+
+//arguments 비슷한 method는 array 근데 array랑 같지는 않습니다.
+function foo(x){
+    console.log('x = ' + x);
+    for(var i=0; i<arguments.length; i++){
+        alert('arg ' + i + '=' + arguments[i]);
+        //arg0 = 10, arg1 = 20, arg2 = 30
+    }
+}
+alert(foo(10, 20, 30))
+
+function abs_3(){
+    if(arguments.length === 0){
+        return 0;
+    }
+    var x = arguments[0];
+    return x >= 0 ? x:-x;
+}
+
+alert(abs_3())
+alert(abs_3(10))
