@@ -1,0 +1,58 @@
+.container{
+    background-color: aquamarine;
+    display: flex;
+    height: 300px;
+    /* display: inline-flex; */
+    /* display: block; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    /* align-content: center; */
+}
+
+.container :nth-child(1){
+    display: flex;
+    order: 1;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: crimson;
+    /* div의 child들에게 flex효과를 먹힘 */
+}
+.container :nth-child(2){
+    display: flex;
+    order: 10000;
+    flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 2;
+    background-color: red;
+    /* div의 child들에게 flex효과를 먹힘 */
+}
+.container :nth-child(3){
+    display: flex;
+    order: 100;
+    flex-basis: 100px;
+    flex-grow: 3;
+    flex-shrink: 3;
+    background-color: khaki;
+    /* div의 child들에게 flex효과를 먹힘 */
+}
+.container :nth-child(4){
+    display: flex;
+    order: 1000;
+    flex-grow: 4;
+    background-color: violet;
+    flex-basis: 100px;
+    flex-shrink: 4;
+    /* div의 child들에게 flex효과를 먹힘 */
+}
+
+
+.item{
+    background-color: yellowgreen;
+    border:1px solid black;
+    padding: 1px 10px 1px 10px;
+}
