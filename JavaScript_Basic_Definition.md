@@ -4,7 +4,7 @@
 
 * JavaScript의 활용
 * jQuery: JavaScript Library
-* JSON(JavaScript Object Notation, 자바스크립트 객체 표기법): JavaScript의 객체 표기법, 서로 다른 기종강의 데이터 전송용으로서 XML을 대체하여 많이 사용되고 있음.
+* JSON(JavaScript Object Notation, 자바스크립트 객체 표기법): JavaScript의 객체 표기법, 서로 다른 기종의 데이터 전송용으로서 XML을 대체하여 많이 사용되고 있음.
 
 #### JavaScript의 작성 방법
 ㉠ Inline JavaScript : tag 내부에 직접 작성
