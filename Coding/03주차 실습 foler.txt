@@ -1,0 +1,124 @@
+<<코딩기초및실습>>
+
+[3주차_01_04차시] A/B반 실시간 Zoom Live 수업
+=> 3월 18일(금요일) 이후 ~ 코로나 상황이 좋아질 때까지
+=> 매주 매차시 시작전 : 5분~10분간 지난 수업 요약 정리
+
+=> 01_02차시 강의 시간 : 14:30 ~ 16:10
+=> 03_04차시 강의 시간 : 16:30 ~ 18:10
+
+[첨단 422호] A/B반 모두 수업시간 이외의 시간은 항상 실습 연습 가능하게 운영하고자 함.
+
+[참고] Zoom 화면 나오지 않으면 결석 처리합니다.
+Zoom 화면 나오지 못한 환경 학생은 미리 LMS에 쪽지를 보내기 바랍니다.
+
+// [코딩기초및실습] 실습 folder
+// 중간고사/기말고사 제출 디렉토리(학번.zip 파일)
+
+SmartIT2022
+	|- 20xxxxxxxx(본인의 학번)
+			|- 03
+			|- 04
+			|- 05
+			|- 06
+			|- 07	
+			|- 09
+			|- 10
+			|- 11
+			|- 12
+			|- 13		
+
+
+// 3주차 실습을 위한 파일
+VSCodeSetup-x64-1.65.2.exe
+
+
+☞ Korean Language Pack for Vusial Studio Code
+☞ vscode-icons / Material Icon Theme
+☞ Bracket Pair Colorizer
+☞ Indent-Rainbow
+☞ Auto Rename Tag
+☞ HTML Snippets
+☞ CSS Peek
+☞ HTML CSS Support
+☞ JavaScript (ES6) code snippets
+☞ Live Server
+
+
+// Working Folder에서 VSCode 실행
+working folder> code .
+
+// Emmet
+h${세명대학교}*6
+
+// HTML(Hyper Text Markup Language) 
+attribute="value"
+
+// CSS(Cascade Style Sheet)
+property: value;
+
+// CSS 적용
+h1 {
+	color: red;
+	font-size: 12px;
+}
+
+
+// attribute vale => 속성값 (html)
+// property vale => 속성값 (css)
+
+// HTML document에 CSS Style 적용 3가지 방법 => <head> tag 안에 넣는다.
+
+// rel = relationship
+// href = hypertext reference
+
+1) Inline Style Sheet (X)
+2) Internal Style Sheet (x) => <style> CSS Code </style>
+3) External Style Sheet (O) => <link rel="stylesheet" href="style.css">
+
+
+// HTML document에 JavaScript 적용 3가지 방법 => <body> tag 안에서 제일 밑에 넣는다.
+=> 이유(아주 중요)는 ? => JavaScript의 특징 중 하나이다.
+
+1) Inline JavaScript (X)
+2) Internal JavaScript (x) => <script> JavaScript Code </script>
+3) External JavaScript (O) => <script src="main.js"></script>
+
+
+// Comment (주석)
+
+// Short key (단축키) => IDE(Integrated Development & Environment)
+1) VSCode
+2) IntelliJ (Eclipse)
+
+
+Ctrl + S		: 저장
+Ctrl + /		: Comments
+Alt + down arrow key
+Shift + Alt + down arrow key
+Ctrl + z
+			
+			
+// HTML Comment
+  <!--  -->
+			
+// CSS Comment
+  /*
+		...
+		...
+	*/
+	
+	/* ... */
+	
+// JavaScript
+//
+
+
+// options
+html => checkbox		(multi selection)
+		=>  radio		(unique selection)
+		
+		
+// 03_04 차시
+class=""		// 여러개 사용 가능하게   .
+id=""				// unique									#	
