@@ -29,7 +29,8 @@
 + ♣ confirm("메시지"); 사용자의 확인을 받을 경우
 #### HTML 요소에 접근하는 방법
 1. id로 접근: document.getElementById("tag의 id")
-2. name으로 접근: document.getElementByName("tag의 name")
+2. name으로 접근: document.getElementsByName("tag의 name")
+> name으로 접근할때 getElement s를 붙인다. id는 유일하기 때문에 s가 없다.
 #### Array(배열)
 배열 선언
 ```
