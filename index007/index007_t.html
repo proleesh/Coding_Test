@@ -11,9 +11,19 @@
     <p>객체 속성에 엑세스하는 두가지 방법이 있습니다. </p>
     <p>person.property 또는 person["property"]를 사용할 수 있습니다. </p>
     이름: <a id="name"></a> <br>
+    확인: <button onclick="document.getElementById('name_2').innerHTML = person.fullName()">클릭하면 이름확인</button>
+    <!-- 클릭하면 이름이 Sunghyuk Lee라고 출력하는 것을 볼수있다. -->
+    <a id="name_2"></a><br>
     학교: <a id="university"></a> <br>
-    학번: <a id="stu_id"></a>
-    
+    학번: <a id="stu_id"></a><br>
+    (그냥TAG방법)날짜시간: <button onclick="document.getElementById('date').innerHTML = Date()">클릭하면 현재 날짜시간확인</button> 
+    <a id="date"></a>
+    <br>
+    <!-- 다른방법 -->
+    (JS호출방법)날짜시간: <button onclick="displayDate()">클릭하면 현재 날짜시간확인</button>
+    <a id="date_2"></a>
+
+    4qa
     <script src="main_7_t.js"></script>
 </body>
 </html>
