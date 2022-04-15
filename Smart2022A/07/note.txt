@@ -1,0 +1,56 @@
+2022.4.15 노트정리
+
+server side rendering
+client side rendering
+single-page application(SPA)
+const num = 100 <-- integer literal 숫자문
+let name = 'Hello' <-- String literal 글자문
+const array = [] <-- array literal 배열문
+const object = {} <-- object literal 객체문
+******************
+brace key --> {} *
+******************
+advanced for statement 앞선 진술
+for()문
+JavaScript Data Type
+1. Number
+Infinity, -Infinity, NaN(Not a Number)
+2. BigInt
+10215584n
+3. String
+"hello world"
+=========================
+JavaScript의 null은 타 언어 null이랑 다르다
+다른언어에서의 null은 "존재하지 않는 object에 대한 reference
+C: Call by value / Call by address / call by reference
+Deep Copy(깊은 복사) / Shallow Copy(얕은 복사)
+
+TypeScript의 탄생은 명시적 표현하기 위해.(JavaScript이랑 다른게생략이 없음)
+Object-Oriented Methodology(System Analysis & Design)
+=========================
+Basic Operator
+unary(단항), bibary(이항), Operand(피연산자)
+Declaration(선언) 예: int xxx;
+Allocation(할당) 예: xxx = xxx;
+==========================
+Math:
+addition Operator (플러스)
+substaction Operator (마이너스)
+multiplation Operator (곱하기)
+division Operator (나누기)
+remainder Operator (퍼센트 즉 나머지)
+exponentiation Operator (거듭제곱)
+Assignment Operator(할당) --> =  수학에서는 equals(같다)라는 의미인데 여기서는 할당
+
+Assignment Operator Chaining => Bubbling / Capturing
+modify-in-place(복합 assignemnt Operator)
+예: += -= *= /= == ===
+
+increment(증가)/descrement(감소) Operator
+===========================
+let counter = 100;
+
+먼저출력한후 한자리 증가 그럼 101
+counter++ //접미사(接尾辭)postfix(JavaScript에서) = Suffix(Java에서 먼저 사용)
+먼저증가한후 재증가해서 102가출력
+++counter //접두사(接頭辭)prefix(Java에서 먼저 사용)
