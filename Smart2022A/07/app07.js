@@ -11,6 +11,11 @@ const isCompare = 6 < 5
 console.log(isGreater) //true
 console.log(isCompare) //false
 
+//다항식
+const a = 1, b = 2;
+const s = a * b;
+console.log(s);//2
+
 //merge(합병)
 console.log(1 + "00") //100
 console.log("10" + 0) //100
