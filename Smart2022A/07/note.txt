@@ -51,6 +51,8 @@ increment(증가)/descrement(감소) Operator
 let counter = 100;
 
 먼저출력한후 한자리 증가 그럼 101
+counter++는 변수 counter의 값을 1 증가 시킵니다. But counter++ 자체는 증가하지 않습니다.
 counter++ //접미사(接尾辭)postfix(JavaScript에서) = Suffix(Java에서 먼저 사용)
 먼저증가한후 재증가해서 102가출력
+++counter는 변수 counter의 값을 1 증가 시킵니다. But ++counter 자체의 값도 1 증가 시킵니다.
 ++counter //접두사(接頭辭)prefix(Java에서 먼저 사용)
