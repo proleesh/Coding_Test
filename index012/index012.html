@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트</title>
+</head>
+<body style="background-color: aquamarine; text-align: center;">
+    <h1>JavaScript Validation</h1>
+    
+    <p>1 부터 10까지 숫자를 입력하십시오.</p>
+    <input type="text" id="num" placeholder="1 ~ 10">
+    <input type="submit" onclick="myFunction()" value="제출">
+    <p id="demo01"></p>
+
+    <!--JavaScript HTML Events-->
+    <!--first test-->
+    <h3 onclick="this.innerHTML='안뇽!^^'">눌러봐</h3>
+    <!--second test-->
+    <input onclick="myCurrentTime()" type="button" value="클릭"></input>
+    <p class="disTime"></p>
+    <!--third test-->
+    <input onclick="changeYourName1()" type="button" value="대문자로 변환">
+    <input type="text" id="cgName1" placeholder="소문자를 입력하십시오" onchange="upperCase()">
+    <br><br><br>
+    <input type="button" onclick="changeYourName2()" value="소문자로 변환">
+    <input type="text" id="cgName2" placeholder="대문자를 입력하십시오" onchange="lowerCase()">
+    <br><br><br>
+    <!--mouse over/out test-->
+    <div style="padding:40px; color: aliceblue; background-color: royalblue; width: 120px; height: 50px;" onmouseover="omOver(this)" onmouseout="omOut(this)">마우스를 여기에 대봐^^</div>
+    <!--mouse up/down test-->
+    <div style="padding:40px; color: aliceblue; background-color: cornflowerblue; width: 120px; height: 50px;" onmousedown="omDown(this)" onmouseup="omUp(this)">마우스로 클릭해봐</div>
+    
+    <script src="js/main_12.js"></script>
+</body>
+</html>
