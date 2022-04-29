@@ -1,0 +1,32 @@
+2022-04-29 노트 정리 작성자: 이성혁
+=========================================================
+Logical Operator 논리 연산자 
+---> ||, &&, XOR
+
+Logical Bitwise Operator 논리 비트 연산자
+---> |, &, ^
+
+Equality 이퀄리티
+---> ==
+---> ===
+차이점: == 보통(normal) === 엄격(strict)
+
+Comparison Operator 비교 연산자
+<, <=, >, >=
+
+Time Complexity (시간 복잡도)
+Space Complexity (공간 복잡도)
+
+callback function -> arrow function -> ※Closure클로저※
+
+functional programming
+
+function declaration(함수 선언식)
+function expression(함수 표현식)
+spread operator(전파 연산자) ...
+
+Java Lambda Expression (->)
+AWS Lambda Expression (->)
+
+for...of//
+for...in// object 에만 사용 가능

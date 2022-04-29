@@ -1,0 +1,5 @@
+/* 지도교수: 이명호 작성자: 이성혁 Author: Sunghyuk Lee */
+.js-clock{
+    width: 100%; /*너비 조정*/
+    text-align: center /*문자 표시 할 위치*/
+}
