@@ -2,6 +2,11 @@
 
 
 const clockContainer = document.querySelector('.js-clock')
+//querySelector(id 또는 class를 넣는다)
+//예: id인 경우: querySelector('#id')
+//예: class인 경우: querySelector('.class')
+//querySelectorAll(id랑 class를 동시에 넣을수 있다)
+//예: id랑 class인 경우: querySelectorAll('#id', '.class')
 const clockTitle = clockContainer.querySelector('h1')
 
 function getTime(){
