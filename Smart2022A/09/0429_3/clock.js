@@ -24,7 +24,14 @@ function getTime(){
 function init(){
     //
     getTime()
-    setInterval(getTime, 1000)
+    setInterval(getTime, 1000)//밀리세컨드(1000분의 1초)마다 getTime함수 반복 실행을 시작한다.
+    //setInterval()메서드는 정해진 시간마다 특정 함수를 부를 때 사용할 수 있는 것이다.
+    //비슷한 메서드는 setTimeout()라는 것이 있고.
+    //setInterval()사용법:
+    //예: setInterval(function, delay)
+    //여기서 delay에 넣을 것은 숫자다. 보통 1000을 넣는다.
+    //1000을 넣을 때 밀리세컨드(1000분의 1초)마다 function 함수 반복 실행을 시작한다는 것이다.
+    //그래서 결론는 사용자의 제어를 필요로 하지 않는 반복 실행에는 setInterval()함수를 쓰는 것이 맞습니다.
 }
 
 init()
