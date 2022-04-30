@@ -30,8 +30,9 @@ console.log(`AND: ${val1 && val2 && check()}`)//false
  * false && true = false
  * false && false = flase
  * XOR(^): 읽는 법: 익스클루시브 OR Exclusive OR
- * 1    1   1 --> true
- * 1    0   0 --> false
- * 0    1   0 --> false
- * 0    0   0 --> false
+ * 1    1   0 
+ * 1    0   1 
+ * 0    1   1 
+ * 0    0   0 
+ * 같을 때만 false 다를 때는 true
  */
