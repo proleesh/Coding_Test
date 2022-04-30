@@ -11,7 +11,7 @@ console.log(`preDecrement: ${postIncrement}, counter: ${counter}`)//4
 
 // Decrement Operators
 const preDecrement = --counter
-console.log(`preDecrement: ${preDecrement}, couner: ${counter}`)
+console.log(`preDecrement: ${preDecrement}, counter: ${counter}`)
 
 const postDecrement = counter--
 console.log(`postDecrement: ${postDecrement}, counter: ${counter}`)
