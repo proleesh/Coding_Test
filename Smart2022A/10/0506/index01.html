@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript html element 선택하기</title>
+</head>
+<body>
+    <h2 id="title">JavaScript html element 선택하기</h2>
+    <div class="container">
+        <ul id="list1" class="list">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+            <li>list 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list2" class="list">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+            <li>list 5</li>
+        </ul>
+    </div>
+    <!--div.container>ul#list3.list>.blue[name=blue]{list $}+li{list $@2}*4-->
+    <!-- @number는 number번부터 시작하는 뜻이다 예: @2는 2번부터 시작 @3는 3번부터 시작-->
+    <div class="container">
+        <ul id="list3" class="list">
+            <li class="blue" name="blue">list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+            <li id="list3">list 5</li>
+            <li>list 6</li>
+        </ul>
+    </div>
+
+    <!-- div.container>div.box{box level 1}>div{box level 2}>div{box level 3} -->
+    <div class="container">
+        <div class="box">box level 1
+            <div>box level 2
+                <div>box level 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lorem -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident, illum ipsum sequi obcaecati architecto saepe eveniet odit vitae odio quibusdam, placeat ratione quas minima voluptas eaque vero temporibus tenetur.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis culpa quisquam, quam eligendi nam officia omnis animi beatae neque debitis velit. Provident quod voluptas, reiciendis tempora voluptatibus eligendi accusamus?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam adipisci quo magnam qui, corporis quia quaerat provident expedita unde aut consequatur! Tempore fugit eveniet blanditiis porro explicabo id nobis quasi?</p>
+
+    <script src="app01.js"></script>
+</body>
+</html>

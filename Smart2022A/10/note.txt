@@ -1,0 +1,2 @@
+SCSS 작성법 주요 키워드:
+@mixin ~ @include
