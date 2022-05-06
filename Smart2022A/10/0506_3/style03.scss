@@ -1,0 +1,66 @@
+/*
+* animation:
+1) keyframes 
+2) ani-duration 
+3) timing-function 
+4) ani-delay 
+5) an-interation 
+6) ani-direction
+*/
+//Annimation Test 
+
+@mixin box1($w, $h) {
+    position: relative;
+    width: $w;
+    height: $h;
+    border: 2px solid blue;
+    animation-name: ani1;
+    animation-duration: 2s; //2초
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@mixin box2($w, $h) {
+    position: relative;
+    width: $w;
+    height: $h;
+    border: 2px solid red;
+    animation-name: ani2;
+    animation-duration: 2s; //2초
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+div{
+    @include box1(100px, 100px)
+}
+p{
+    @include box2(100px, 100px)
+}
+// div{
+//     @include box1(200px, 200px)
+// }
+// p{
+//     @include box2(100px, 100px)
+// }
+@keyframes ani1{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 150px;
+    }
+}
+@keyframes ani2 {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: violet;
+    }
+}

@@ -1,2 +1,92 @@
+2022-05-06 작성자: 이성혁
+
 SCSS 작성법 주요 키워드:
 @mixin ~ @include
+===============================================
+Polyfill(옛날에 쓰던 프로그래밍 언어) -> IE 8/9/10/11 -> Babel
+===============================================
+함수이름 있는경우:
+function doSomething(){ --> 함수 선언식 이름 lowerCarmelCase
+    console.log('Hello World')
+}
+함수이름 없는경우 (Annonymous function 익명함수):
+function(){
+    return
+}
+리턴 할 값이 없는 경우
+void를 function앞에 붙인다
+예: void function{}
+
+Callback function는 나중에 호출용이다
+
+parameter(매개변수)이 다르면 구분이 되고
+예: function test(parameter1, parameter2){}
+    function test(parameter3, parameter4){}
+data type이 다르면 구분이 된다
+예: function test(int, int){}
+예: function test(string, string){}
+argument(인자)
+operand(피연산자)
+
+함수에 argument를 전달
+예: function doSomething(add){
+    conosle.log(add)
+    const result = add(2, 3)
+    console.log(result)//5
+}
+
+value를 return하는 함수
+예: function add(a, b){
+    const sum = a + b;
+    return sum;
+    //return a + b; 선언 안 한 경우!!
+}
+function call
+parameter가 있는 경우
+예: functionName(parameter)
+parameter가 없는 경우
+예: functionName()
+================================================
+function Expression(함수 표현식) ※많이 쓰인다
+//function은 value(값) 이다.
+let sayHi = function(){
+    console.log("hello")
+}
+console.log(sayHi)
+===============================================
+Overriding(재정의)
+Overloading(중복정의)
+==================================================
+Class rule (클래스 규칙)
+template이다.
+한번만 선언한다 (declare once)
+데이터가 없다 (no data in)
+메모리에 올라기지 않다. (does no go into memory))
+
+Object rule (객체 규칙)
+class를 이용하여 실제 데이터를 넣어서 만든다
+class을 가지고 object를 많이 만들수 있다
+데이터가 들어있다. (data in)
+메모리에 올라간다. (go into memory)
+
+class다음을 포함
+> fields
+> methods(항상 get/set를 가진다 또한 이름도 같아야 한다)
+예: getXXX() / setXXX()
+
+Class Declarations 클래스 선언
+예: class Person{
+    //constructor 클래스에는 생성자(constructor)가 반드시 있다
+    //constructor() 아무것도 없는경우 default constructor라고 한다.
+    constructor(name, age){ //보통 이런것을 자동으로 완성할 수 있다
+        this.name = name;
+        this.age = age;
+    }
+    //methods (방법 또는 메서드)
+    speak(){
+        console.log(`${this.name}: Hello!!!`);
+    }
+}
+
+const smart = new Person('Smart01', 02)
+console.log(smart.name)
