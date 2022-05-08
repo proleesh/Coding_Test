@@ -1,0 +1,9 @@
+{
+    "name":"Sunghyuk",
+    "age":24,
+    "cars":[
+        { "car":"sedan", "name":"Hyundai" },
+        { "car":"SUV", "name":"KIA" },
+        { "car":"coupe", "name":"Audi" }
+    ]
+}
