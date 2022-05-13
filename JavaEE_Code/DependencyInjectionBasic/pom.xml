@@ -13,7 +13,7 @@
 		<!--slf4j 버전-->
 		<org.slf4j-version>1.7.36</org.slf4j-version>
 		<!--logback 버전-->
-		<ch.qos.logback>1.2.11</ch.qos.logback>
+		<ch.qos.logback-version>1.2.11</ch.qos.logback-version>
 	</properties>
 
 	<!--프로젝트에서 사용할 라이브러리 정보-->
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>${ch.qos.logback}</version>
+			<version>${ch.qos.logback-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
