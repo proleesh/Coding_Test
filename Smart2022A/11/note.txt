@@ -1,0 +1,12 @@
+//2022-05-13 강의노트 작성자: 이성혁
+
+node 초기화: npm init
+그럼 package.json라는 파일이 생김
+nodemon 설치: npm -install -g nodemon
+
+Internet <-> UNIX <-> C
+OSI 7 Layers <--> LAN(Local Area Network) Protocol, IEEE 802.3(Ethernet), TCP/IP
+인터넷 모든 프로토콜 즉 협의(協義)은 모두 UNIX에서 나온것이다.
+UNIX가 현재 모든 인터넷 협의의 조상이라고 생각할 수 있다.
+
+node로 출력하기: npm run start:dev
