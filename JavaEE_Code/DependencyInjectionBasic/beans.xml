@@ -93,4 +93,41 @@
 		</property>
 
 	</bean>
+
+	<bean id="client3" class="com.co.shl.beans.Client">
+		<property name="name" value="보영"></property>
+		<property name="age" value="31"></property>
+		<property name="gender" value="female"></property>
+		<property name="cls">
+			<list>
+				<value>A</value>
+				<value>B</value>
+				<value>C</value>
+			</list>
+		</property>
+		<property name="employees">
+			<list>
+				<ref bean="employee" />
+				<ref bean="employee2" />
+				<ref bean="employee3" />
+			</list>
+		</property>
+		<property name="bossMap">
+			<map>
+				<entry>
+					<key>
+						<value>1001</value>
+					</key>
+					<value>김수로</value>
+				</entry>
+				<entry>
+					<key>
+						<value>1002</value>
+					</key>
+					<value>최치원</value>
+				</entry>
+			</map>
+		</property>
+
+	</bean>
 </beans> 

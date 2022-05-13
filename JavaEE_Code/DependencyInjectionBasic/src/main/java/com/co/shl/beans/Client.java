@@ -1,6 +1,7 @@
 package com.co.shl.beans;
 
 import java.util.List;
+import java.util.Map;
 
 public class Client {
 	private String name;
@@ -8,7 +9,14 @@ public class Client {
 	private String gender;
 	private List<String> cls;
 	private List<Employee> employees;
-//	public List<Client> getcList() {
+	private Map<String, String> bossMap;
+public Map<String, String> getBossMap() {
+		return bossMap;
+	}
+	public void setBossMap(Map<String, String> bossMap) {
+		this.bossMap = bossMap;
+	}
+	//	public List<Client> getcList() {
 //		return cList;
 //	}
 //	public void setcList(List<Client> cList) {
@@ -57,7 +65,7 @@ public class Client {
 	@Override
 	public String toString() {
 		return "Client [name=" + name + ", age=" + age + ", gender=" + gender + ", cls=" + cls + ", employees="
-				+ employees + "]";
+				+ employees + ", bossMap=" + bossMap + "]";
 	}
 	public Client() {
 		super();

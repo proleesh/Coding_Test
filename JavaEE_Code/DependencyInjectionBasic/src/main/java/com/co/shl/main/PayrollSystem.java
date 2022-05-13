@@ -42,6 +42,10 @@ public class PayrollSystem {
 		Client client2 = (Client) fileSysac.getBean("client2");
 		System.out.printf("클라이언트2의 값을 주입해서 얻은 결과: %s\n", client2); 
 		// 클라이언트2의 값을 주입해서 얻은 결과: Client [name=은비, age=28, gender=female, cls=null, employees=[Employee [name=이성혁, age=24, gender=male, score=69.58, client=Client [name=은지, age=26, gender=female, cls=null, employees=null]], Employee [name=하늘, age=29, gender=female, score=99.55, client=null], Employee [name=선호, age=25, gender=female, score=99.88, client=null]]]
+		
+		Client client3 = (Client) fileSysac.getBean("client3");
+		System.out.printf("클라이언트3의 값을 주입해서 얻은 결과: %s\n", client3);
+		// bossMap={1001=김수로, 1002=최치원}를 추가하는 것을 보인다.
 	}
 
 }

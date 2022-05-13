@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>${ch.qos.logback}</version>
+			<version>${ch.qos.logback-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
