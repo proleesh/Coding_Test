@@ -10,3 +10,55 @@ OSI 7 Layers <--> LAN(Local Area Network) Protocol, IEEE 802.3(Ethernet), TCP/IP
 UNIX가 현재 모든 인터넷 협의의 조상이라고 생각할 수 있다.
 
 node로 출력하기: npm run start:dev
+
+DOM Tree를 구성하는 Object 하나를 Node(노드)라고 한다.
+
+브라우저 Console창에서
+document.documentElement
+-> html를 찾아간다
+마찬가지로
+document.body를 하면
+-> html하위에 있는 body를 찾아간다.
+document.head를 하면
+-> html하위에 있는 head를 찾아간다.
+document.body.style;
+-> html하위에 있는 body 그리고 body에 있는 모든 style를 찾아간다.
+document.body.style.opactiy="0 ~ 1"
+-> 투명하게 보이기위한 opacity 0이면 안보임, 0.5이면 반투명, 1이면 정상
+
+*********************************************
+getElement로 가져올때 -> html collection
+querySelector로 가져올때 -> tag
+querySelectorAll로 가져올때 -> node list
+*********************************************
+
+지정 문서 찾고 싶을 때: document.querySelector('tagName:nth-of-type(number)')
+색상 스타일 바꾸기: document.querySelector('tagName:nth-of-type(number)').style.color = 'yourColor'
+
+const list = document.querySelectorAll('p:nth-of-type(2n)');
+//2n는 짝수 만을 변경하고싶다 즉 2 곱하기 n, 1을 n에 대입할 때 2, 2일 때 4, 3일 때 6 ...
+for(p of list){
+    p.style.backgroundColor = '#000'; //#000는 블랙의 색상코드
+    p.style.color = '#fff'; //#fff는 화이트의 색상코드
+};
+
+C. R. U. D(Create Read Update Delete)
+1) database tier(데이터베이스층) -> middle tier(중간층) -> presentation tier(표현층)
+1. 모두 가져오기
+2. 한건 가져오기
+2) presentation tier(표현층) -> middle tier(중간층) -> database tier(데이터베이스층)
+create(생성) insert(입력)
+3) presentation tier(표현층) -> middle tier(중간층) -> database tier(데이터베이스층)
+update(갱신, 업데이트)
+4) presentation tier(표현층) -> middle tier(중간층) -> database tier(데이터베이스층)
+delete(삭제)
+===========================================================================================
+middle tier에 복잡한 알고리즘(방대한 데이터 양을 더 빠르게 처리하기 위해 쓴다):
+Time Complexity 시간 복잡도
+Space Complexity 공간 복잡도
+
+Destructuring Assignment (구조분해 할당) (ReactJS는 이것을 사용한다.)
+
+Event Handler
+
+addEventListener();
