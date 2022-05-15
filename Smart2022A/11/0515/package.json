@@ -1,0 +1,12 @@
+{
+  "name": "0515",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "start:dev": "nodemon --watch src/ src/index1.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
