@@ -46,6 +46,9 @@ public class PayrollSystem {
 		Client client3 = (Client) fileSysac.getBean("client3");
 		System.out.printf("클라이언트3의 값을 주입해서 얻은 결과: %s\n", client3);
 		// bossMap={1001=김수로, 1002=최치원}를 추가하는 것을 보인다.
+		
+		Client client4 = (Client) fileSysac.getBean("client4");
+		System.out.println(client4);
 	}
 
 }

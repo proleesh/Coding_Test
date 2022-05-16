@@ -2,8 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-						http://www.springframework.org/schema/beans/spring-beans.xsd">
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/util
+						http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
 	<bean id='esbean' class="com.co.shl.beans.EmployeeServiceImpl" />
 	<bean id='esbean2' class="com.co.shl.beans.EmployeeServiceImpl" />
@@ -128,6 +131,35 @@
 				</entry>
 			</map>
 		</property>
-
 	</bean>
+		<bean id="client4" class="com.co.shl.beans.Client">
+		<property name="name" value="지아"></property>
+		<property name="age" value="31"></property>
+		<property name="employees" ref="employees" ></property></bean>
+	
+		<bean id="employee4" class="com.co.shl.beans.Employee" p:name="예은"
+		p:age="25" p:gender="female" p:score="24.55"></bean>
+		
+		<bean id="employee5" class="com.co.shl.beans.Employee" p:name="보라"
+		p:age="27" p:gender="female" p:score="44.44"></bean>
+		
+		<bean id="employee6" class="com.co.shl.beans.Employee" p:name="윤호"
+		p:age="25" p:gender="male" p:score="99.88"></bean>
+	
+	<util:list id="employees">
+
+			<ref bean="employee4"/>
+			<ref bean="employee5"/>
+			<ref bean="employee6"/>
+
+	</util:list>
+	<util:map>
+		<entry>
+			<key>
+				<value>1</value>
+			</key>
+			<value>홍길동</value>
+		</entry>
+		
+	</util:map>
 </beans> 
