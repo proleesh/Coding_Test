@@ -1,0 +1,21 @@
+2022-5-20 노트 정리 작성자: 이성혁
+
+JavaScript에서 class는 function의 한 종류이다.
+
+<=> relation == table
+<=> relational
+<=> relationship (1 : 1, 1 : N, N : M, M : 1) ORM => Object Relational Mapping
+표준화 한 사람: Gavin King <=> Hibernate <-> Dialet
+
+shallow copy(얕은 복사) vs deep copy(깊은 복사)
+
+1) Primitive[원시](number, string, boolean, undefined, null)은 deep copy가 된다. shallow copy가 안 된다.
+
+2) Object(array, function)는 shallow copy되었지만, deep copy가 되지 않았다.
+
+spread operator[전개구문] ==> shallow copy를 수행합니다.
+
+RDBMS ==> Relational Database Management System
+
+assignment operator 우측에는 모든 iterable이 올 수가 있다.
+
