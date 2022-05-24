@@ -1,6 +1,6 @@
 package com.kr.prospring5.ch2.decoupled;
 
-// Component
+// provider 인터페이스
 public interface MessageProvider {
 	//Message제공자 인터페이스를 정의한다.
 	String getMessage(); //클래스 Method 정의

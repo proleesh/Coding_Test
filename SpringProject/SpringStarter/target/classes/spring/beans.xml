@@ -3,13 +3,25 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-						http://www.springframework.org/schema/beans/spring-beans.xsd">
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd">
+<!-- p 네임스페이스는 XSD 파일에 정의돼 있지 않고 스프링 코어에만 존재한다. 따라서 schemaLocation속성에 언떤 XSD도 선언되지 않습니다. -->
 
 	<bean id="provider"
 		class="com.kr.prospring5.ch2.decoupled.HelloWorldMessageProvider"></bean>
 	<bean id="renderer"
 		class="com.kr.prospring5.ch2.decoupled.StandardOutMessageRenderer"
-		p:messageProvider-ref="provider"></bean>
-		<bean id='oracle' name="wiseworm" class="com.kr.prospring5.ch3.BookwormOracle"></bean>
+		p:messageProvider-ref="provider">
+		<property name="messageProvider" ref="provider"></property>
+	</bean>
+	<bean id='oracle' name="wiseworm"
+		class="com.kr.prospring5.ch3.BookwormOracle"></bean>
+	<context:component-scan
+		base-package="com.kr.prospring5.ch3.annotated">
+		<context:exclude-filter type="assignable"
+			expression="com.kr.NotAService" />
+	</context:component-scan>
 </beans> 

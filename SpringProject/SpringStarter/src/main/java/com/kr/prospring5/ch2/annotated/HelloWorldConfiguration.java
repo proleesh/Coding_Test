@@ -1,13 +1,28 @@
 package com.kr.prospring5.ch2.annotated;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 
 import com.kr.prospring5.ch2.decoupled.HelloWorldMessageProvider;
 import com.kr.prospring5.ch2.decoupled.MessageProvider;
 import com.kr.prospring5.ch2.decoupled.MessageRenderer;
 import com.kr.prospring5.ch2.decoupled.StandardOutMessageRenderer;
 
+/**
+ * Annotation을 쓰는 것을 추천한다. 물론 bean에서 쓰는 것도 나쁘지는 않지만.
+ * 간결하게 쓰기 위해 또는 코드에서 한 번에 작성하기 위해 Annotation을 쓰는 것이 더 좋다.
+ * @ImportResource를 사용해 하나 이상의 XML파일에서 빈 정의를 가져올수 있다.
+ * @ComponentScan을 사용해 beans.xml에 있는 <context:component-scanning.../>을 대체 쓸수 있다. 기능은 똑 같다.
+ * @author sungh
+ *
+ */
+/*
+ * @ImportResource(locations = {"classpath:spring/beans.xml"})
+ * 
+ * @ComponentScan(basePackages = {"com.kr.prospring5.ch3.annotated"})
+ */
 @Configuration
 public class HelloWorldConfiguration {
 	
