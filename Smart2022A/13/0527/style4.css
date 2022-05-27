@@ -1,0 +1,28 @@
+#box{
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 300px;
+    height: 250px;
+    background-color: khaki;
+    border: 2px solid black;
+}
+
+#list{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 30px;
+    width: 220px;
+    height: 150px;
+    background-color: olivedrab;
+    border: 2px solid black;
+}
+
+#color{
+    padding-top: 30px;
+    padding-left: 25px;
+    width: 140px;
+    height: 60px;
+    font-weight: bold;    
+    background-color: yellow;
+    border: 2px solid black;
+}

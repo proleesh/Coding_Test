@@ -1,0 +1,26 @@
+직렬화(直列化) 또는 시리얼라이제이션(serialization)은 컴퓨터 과학의 데이터 스토리지 문맥에서 데이터 구조나 오브젝트 상태를 동일하거나 다른 컴퓨터 환경에 저장(이를테면 파일이나 메모리 버퍼에서, 또는 네트워크 연결 링크 간 전송)하고 나중에 재구성할 수 있는 포맷으로 변환하는 과정이다.
+반대로 deserialization 역직렬화
+inhenritance(상속) 표시 [] -> []
+name을 찾을 때
+let form = document.getElementsByName('search')[0];인덱스 붙여서 찾는다.
+또는
+document.querySelector("form[name='search']")
+object[object.length-1] 마지막 object를 가져올 떄
+addEventListener() method 사용
+addEventListener()로 등록한 function는 Event Listener 라고 부른다.
+이것을 사용하면 element에 handler를 등록시킬 수 있다.
+event안에 method가 들어가 있다.
+
+preventDefault() method 반드시 알아야 한다.
+
+Arrow function는 함수이름이 없다.
+()=>{
+
+}
+vs
+function(){
+
+}
+
+bubbling은 자식클래스 부터 부모클래스까지 순서대로 출력 됩니다.
+index4.html\style4.css\app4.js를 실행해서 참고하세요!
