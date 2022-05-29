@@ -8,7 +8,8 @@
 						http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context
 						http://www.springframework.org/schema/context/spring-context.xsd">
-<!-- p 네임스페이스는 XSD 파일에 정의돼 있지 않고 스프링 코어에만 존재한다. 따라서 schemaLocation속성에 언떤 XSD도 선언되지 않습니다. -->
+	<!-- p 네임스페이스는 XSD 파일에 정의돼 있지 않고 스프링 코어에만 존재한다. 따라서 schemaLocation속성에 언떤 
+		XSD도 선언되지 않습니다. -->
 
 	<bean id="provider"
 		class="com.kr.prospring5.ch2.decoupled.HelloWorldMessageProvider"></bean>
@@ -24,4 +25,22 @@
 		<context:exclude-filter type="assignable"
 			expression="com.kr.NotAService" />
 	</context:component-scan>
+	<bean id='messageProvider'
+		class='com.kr.prospring5.ch3.xml.ConfigurableMessageProvider'
+		>
+		<constructor-arg
+			value="I hope that someone gets  my message in a bottle"></constructor-arg>
+		<!-- 이 코드에서는 <property> 태그를 사용하는 대신 <constructor-arg> 태그를 사용했습니다. 이번에는 
+			다른 빈에 전달하지 않고 단지 문자열만을 전달하므로 ref 대신 value 애트리뷰트를 사용해 생성자 인수의 값을 지정합니다. 둘 
+			이상의 생성자 인수가 있거나 클래스에 둘 이상의 생성자가 있는 경우에는 인수 인덱스(생성자 시그니처내에서 0부터 시작)를 지정하는 
+			index 애트리뷰트를 각<consturctor-arg> 태그에 제공해야 합니다. 인자 사이의 혼동을 피하고 스프링이 올바른 생성자를 
+			선택하도록 하려면 다중 인수를 생성자를 다룰 때마다 항상 index attribute를 사용하는 것이 좋습니다. -->
+	</bean>
+
+	<context:component-scan
+		base-package="com.kr.prospring5.ch3.annotated"></context:component-scan>
+
+	<bean id='message' class="java.lang.String"
+		c:_0="I hope that someone gets my message in a bottle" />
+
 </beans> 
