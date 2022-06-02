@@ -31,11 +31,52 @@
 	<bean id="oracle" name="wiseworm"
 		class="com.kr.prospring5.ch3.BookwormOracle">
 	</bean>
-	
+
 	<bean id="injectRef" class="com.kr.prospring5.ch3.xml.InjectRef">
 		<property name="oracle">
-<!-- 			<ref bean="oracle"/> -->
-			<ref bean="wiseworm"/>
+			<!-- <ref bean="oracle"/> -->
+			<ref bean="wiseworm" />
+		</property>
+	</bean>
+
+	<!-- 컬렉션 주입 -->
+
+	<bean id="lyricHolder"
+		class="com.kr.prospring5.ch3.xml.LyricHolder"></bean>
+
+	<bean id="injectCollection"
+		class="com.kr.prospring5.ch3.xml.CollectionInjection">
+		<!-- map property의 경우 <map> 태그를 사용해 Map instance를 주입했습니다. 각 항목은 <entry> 
+			태그를 사용해 지정되는데 이 항목은 문자열 key와entry 값을 가집니다. -->
+		<property name="map">
+			<map>
+				<!-- <entry key="someValue"> <value>It's Thursday, We finally made it</value> 
+					</entry> <entry key="someBean"> <ref bean="lyricHolder"/> </entry> -->
+				<!-- map요소에서 <value> <ref> element대신 value와 value-ref attribute를 쓰면 더 
+					간결하다. -->
+				<entry key="someValue"
+					value="It's Thursday, we finally made it"></entry>
+				<entry key="someBean" value-ref="lyricHolder"></entry>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="firstName">Sunghyuk</prop>
+				<prop key="secondName">Lee</prop>
+			</props>
+		</property>
+		<!-- <list>태그와<set>태그는 동일한 방식으로 동작합니다. -->
+		<property name="set">
+			<set>
+				<value>I can't believe I get to see your face</value>
+				<ref bean="lyricHolder" /> <!-- bean에 있는 값은 방금 정의 한 빈의 id이다. -->
+			</set>
+		</property>
+		<property name="list">
+			<list>
+				<value>You've been working and I've been waiting</value>
+				<ref bean="lyricHolder" />
+			</list>
 		</property>
 	</bean>
 
