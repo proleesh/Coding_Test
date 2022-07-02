@@ -15,7 +15,7 @@ public class StreamPipelinesExample {
 				.mapToInt(Member :: getAge)
 				.average() //최종 처리
 				.getAsDouble();
-		
+		System.out.println("남자 평균 나이: " + ageAvg);
 	}
 
 }
