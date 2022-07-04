@@ -2,7 +2,7 @@ package test10;
 
 public class Student2 {
 		public enum Sex {MALE, FEMALE}
-		public enum City {Seoul, Pusan}
+		public enum City {Seoul, Pusan, Seongnam}
 		
 		private String name;
 		private int Score;
